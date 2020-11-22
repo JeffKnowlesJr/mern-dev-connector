@@ -1,12 +1,11 @@
 import React, { Fragment, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export const Login = () => {
   // Use state hook
   const [formData, setFormData] = useState({
     email: '',
-    password: ''
+    password: '',
   });
 
   const { email, password } = formData;
