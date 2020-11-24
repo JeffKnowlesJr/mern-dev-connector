@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { application } from 'express';
 import setAuthToken from '../utils/setAuthToken';
 import { setAlert } from './alert';
 import {
@@ -8,6 +7,13 @@ import {
   USER_LOADED,
   AUTH_ERROR
 } from './types';
+
+// import { application } from 'express';
+// import was breaking React Compile via
+// ./node_modules/express/lib/view.js
+// Critical dependency: the request of
+// a dependency is an expression
+// Error solved
 
 // Load User
 export const loadUser = () => async (dispatch) => {
