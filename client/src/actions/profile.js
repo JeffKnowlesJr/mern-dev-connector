@@ -12,10 +12,10 @@ export const getCurrentProfile = () => async (dispatch) => {
       type: GET_PROFILE,
       payload: res.data
     });
-  } catch (error) {
+  } catch (err) {
     dispatch({
       type: PROFILE_ERROR,
-      payload: { msg: error.response.statusText, status: err.response.status }
+      payload: { msg: err.response.statusText, status: err.response.status }
     });
   }
 };
