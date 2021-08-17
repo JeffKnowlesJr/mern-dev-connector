@@ -1,3 +1,6 @@
+console.log('db init')
+console.log('------------------------------------------------')
+
 const mongoose = require('mongoose')
 const db = process.env.mongoURI
 
@@ -12,7 +15,7 @@ const connectDB = async () => {
     })
     console.log('MongoDB Connected...')
   } catch (err) {
-    console.error(err.message)
+    console.error('MongoDB Rejection ', err.message)
     // Exit process with failure
     process.exit(1)
   }

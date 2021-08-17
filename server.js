@@ -1,3 +1,5 @@
+console.log('server init')
+console.log('------------------------------------------------')
 const express = require('express')
 const dotenv = require('dotenv')
 dotenv.config()
