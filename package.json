@@ -23,6 +23,7 @@
   "homepage": "https://github.com/JeffKnowlesJr/mern-dev-connector#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
     "gravatar": "^1.8.1",
