@@ -36,8 +36,7 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
               <p>{repo.description}</p>
               {validateUrl(repo.homepage) && (
                 <p>
-                  <h5>Url: </h5>
-                  <a href={repo.homepage}>{repo.homepage}</a>
+                  Url: <a href={repo.homepage}>{repo.homepage}</a>
                 </p>
               )}
             </div>
